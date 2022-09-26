@@ -7,8 +7,8 @@ FROM scratch
 COPY --from=build /app/target/aot /target/aot
 EXPOSE 8080
 CMD ["/target/aot"]
-#FROM alpine:3.9.4
-#COPY out /opt/docker/out
-#RUN chmod +x /opt/docker/out
-#CMD ["/opt/docker/out"]
+#FROM alpine:3.16.2
+#COPY --from=build /app/target/aot /target/aot
+#RUN chmod +x /target/aot
+#CMD ["/target/aot"]
 #docker build -t spring_boot_3_aot:0.1 .
