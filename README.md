@@ -40,9 +40,13 @@ export JAVA_HOME=/Users/k/Library/Java/JavaVirtualMachines/graalvm-ce-java17-22.
 source $HOME/.mavenrc
 
 ```
+#### Build project
+* You can build the normal jar file
+* You can compile native in host/dev system and execute as a normal binary
+* You can compile native and build docker image)
+```
+sh ./build
 
-You have 2 options for run compile deploy
-* Compile native in host/dev system and execute as a normal binary
-* Compile it in dockerfile (the process consumes a lot of mem so it can cause issues building)
+```
 </p>
 </details>
