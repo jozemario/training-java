@@ -42,11 +42,17 @@ source $HOME/.mavenrc
 ```
 #### Build project
 * You can build the normal jar file
+```
+sh ./aot.sh
+```
 * You can compile native in host/dev system and execute as a normal binary
+```
+sh ./build-native.sh
+```
+
 * You can compile native and build docker image)
 ```
-sh ./build
-
+sh ./build-native-docker.sh
 ```
 </p>
 </details>
